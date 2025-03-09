@@ -31,8 +31,8 @@ class DaemonService : Service() {
         isRunning = true
         val notification = NotificationCompat.Builder(this, "daemon_channel")
             .setSmallIcon(R.drawable.ic_launcher_foreground)
-            .setContentTitle("Listener de yape activo")
-            .setContentText("Activo 05:00")
+            .setContentTitle("Servicio activo")
+            .setContentText("Esperando notificaciones de yape...")
             .build()
 
         startForeground(1, notification)
